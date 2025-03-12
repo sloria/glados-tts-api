@@ -12,10 +12,9 @@ WORKDIR /app
 COPY pyproject.toml uv.lock .python-version README.md application.py ./
 COPY models/ ./models/
 
-# Install dependencies and download glados models
 RUN uv sync --no-dev --frozen \
   && uv run glados download
 
 COPY src/ ./src/
 EXPOSE 5050
-CMD ["uv", "run", "litestar", "run", "--host", "0.0.0.0", "--port", "5050", "--debug"]
+CMD ["uv", "run", "litestar", "run", "--host", "0.0.0.0", "--port", "5050"]
