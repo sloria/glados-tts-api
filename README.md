@@ -43,3 +43,10 @@ curl -X POST http://localhost:5050/v1/audio/speech \
   }' \
   --output speech.mp3
 ```
+
+## Usage with Open WebUI
+
+1. Run the server using one of the methods above
+1. Admin Panel > Settings > Audio > TTS Settings: Text-to-Speech Engine = OpenAI. API Base URL = http://localhost:5050/v1. API Key = doesntmatter. TTS Voice = glados. TTS Model = glados. Response splitting = None. Save.
+
+![Open WebUI audio settings](https://github.com/user-attachments/assets/5753dcab-463d-478b-b7c2-9d33432f56ca)
