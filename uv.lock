@@ -218,7 +218,7 @@ wheels = [
 [[package]]
 name = "glados"
 version = "0.1.0"
-source = { git = "https://github.com/dnhkng/GLaDOS.git#4fa741abb01dea1a1e35b173f1d00e20e20c1ef9" }
+source = { git = "https://github.com/dnhkng/GLaDOS.git?rev=4fa741a#4fa741abb01dea1a1e35b173f1d00e20e20c1ef9" }
 dependencies = [
     { name = "jinja2" },
     { name = "levenshtein" },
@@ -257,7 +257,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "click", specifier = ">=8.1.8" },
-    { name = "glados", extras = ["cpu"], git = "https://github.com/dnhkng/GLaDOS.git" },
+    { name = "glados", extras = ["cpu"], git = "https://github.com/dnhkng/GLaDOS.git?rev=4fa741a" },
     { name = "litestar", extras = ["standard", "structlog"], specifier = ">=2.15.1" },
     { name = "soundfile", specifier = ">=0.13.1" },
 ]
