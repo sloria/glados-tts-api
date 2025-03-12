@@ -242,7 +242,6 @@ name = "glados-tts-api"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "click" },
     { name = "glados", extra = ["cpu"] },
     { name = "litestar", extra = ["standard", "structlog"] },
     { name = "soundfile" },
@@ -256,7 +255,6 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "click", specifier = ">=8.1.8" },
     { name = "glados", extras = ["cpu"], git = "https://github.com/dnhkng/GLaDOS.git?rev=4fa741a" },
     { name = "litestar", extras = ["standard", "structlog"], specifier = ">=2.15.1" },
     { name = "soundfile", specifier = ">=0.13.1" },
