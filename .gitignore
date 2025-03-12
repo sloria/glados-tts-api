@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+
+# Project-specific
+.env
+
+# Make sure we don't accidentally check in output files
+*.wav
+*.mp3
+
+# The large model files
+*.bin
+*.gguf
+*.onnx
